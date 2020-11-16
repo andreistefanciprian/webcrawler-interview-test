@@ -78,6 +78,7 @@ class WebCrawler:
         # write site map dictionary to json file
         with open(json_file_name, "w") as write_file:
             json.dump(self.site_map, write_file)
+            print(f'\nSite map for {self.url} made available locally at {json_file_name}.')
 
         return dict
 
